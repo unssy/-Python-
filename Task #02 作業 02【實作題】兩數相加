@@ -1,0 +1,9 @@
+x = float(input())
+y = float(input())
+
+sum = x + y
+
+a = int(input())
+b = int(input())
+a, b = b, a
+print(a,b)
