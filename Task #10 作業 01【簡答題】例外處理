@@ -1,0 +1,41 @@
+Task #10 作業 01【簡答題】例外處理
+繳交作業時請直接複製以下題目到作業填答區，並將「(在這裡回答)」部分改寫成你的答案：
+
+1. 回想看看到目前為止，你曾經遇到過哪些錯誤發生？
+
+1.Syntax errors
+
+2.Runtime errors
+
+3.Exceptions
+
+2. 試著解釋什麼是「例外處理」，並且說明在哪些情況適合使用？
+
+程式運行時出現例外情況，需要針對例外做處理。
+
+1.預測可能會出現的狀況:文件不存在、輸入錯誤數據類型
+
+2.無法避免的錯誤:斷線
+
+3.一定程度容許的異常
+
+3. 請問以下程式碼的「變數 e」代表的意義是什麼？
+
+try:
+x = input() / input()
+except Exception as e:
+print(e)
+
+python內建的異常類型會被賦值給Exception 並用e變數代表，透過e可以知道異常類型並驗except區塊中做處置:打印出異常類型、日誌紀錄
+4. 請問以下程式碼的「raise」跟「finally」的用法為何？
+
+try:
+raise Exception('spam', 'eggs')
+except Exception as e:
+print(e)
+finally:
+print('done')
+
+raise在try:區塊中主動觸發Exception 異常讓except捕捉，並且傳遞兩個參數('spam', 'eggs')
+
+finally:區塊的代碼無論是否發生異常都會觸發，確保程式完成之前做完必要操作
