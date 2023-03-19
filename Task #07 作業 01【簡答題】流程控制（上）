@@ -1,0 +1,18 @@
+L=[0,1,2,3,4,5,6,7,8,9]
+odd_lst=[]
+even_lst=[]
+
+for i in L:
+ if i%2==0:
+   even_lst.append(i)
+ else :
+   odd_lst.append(i)
+L=odd_lst+even_lst
+print(L)
+
+numbers = [1, 2, 3]
+letters = ['a', 'b', 'c']
+names = ['John', 'Mary', 'Tom']
+print(list(zip(numbers, letters, names)))
+print(dir(L))
+help(print)
