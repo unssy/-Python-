@@ -1,0 +1,8 @@
+s = str(input())
+s1 = s.replace("not that poor", "good" )
+
+print(s1)
+
+s = input("請輸入網址 EX:https://www.facebook.com/dscareer\n")
+s1 = s.split('/')
+print(s1[2])
